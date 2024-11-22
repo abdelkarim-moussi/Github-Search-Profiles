@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Github Profile Search</title>
+</head>
+<body>
+    <main>
+
+       <header>
+        <h3 class="logo">Profinder</h3>
+        <div>
+            <p id="theme">Dark</p>
+            <button type="button" id="change-theme-btn"><img id="theme-icon" src="./assets/imgs/icon-sun.svg" alt="Dark Mode"></button>
+        </div>
+       </header>
+
+       <form action="/">
+        <div class="search">
+            <img src="./assets/imgs/icon-search.svg" alt="search icon">
+            <input type="search" placeholder="Search Github username...">
+        </div>
+        <button type="submit" id="search-btn">search</button>
+       </form>
+
+       <section>
+        <div class="card">
+            <div class="card-body">
+               <img id="user-image" src="./assets/imgs/github.png" alt="card-image">
+               <div>
+                <h3 id="name">                               
+                    <a href="">Kasia Zaleska</a>
+                </h3>
+                 
+                <h4 id="login">
+                   <span>@</span>kzaleskaa
+                </h4>
+                
+                <p>
+                    <span>Joined</span> 16 Mar 2020
+                </p>
+               </div>
+            </div>
+            <p id="card-bio">
+                This profile has no bio
+            </p>
+        </div>
+
+
+        <div id="statistics">
+           <div class="stat-item">
+            <h4>Repos</h4>
+            <p id="repos">16</p>
+           </div>
+           <div class="stat-item">
+            <h4>Followers</h4>
+            <p id="followers">16</p>
+           </div>
+           <div class="stat-item">
+            <h4>Following</h4>
+            <p id="following">16</p>
+           </div>
+        </div>
+
+        <div id="contact-info">
+           <div>
+            <img src="./assets/imgs/icon-location.svg" alt="location">
+            <p id="location">Warsaw</p>
+           </div>
+           <div>
+            <img src="./assets/imgs/icon-website.svg" alt="website">
+            <p id="website">website.com</p>
+           </div>
+           <div>
+            <img src="./assets/imgs/icon-twitter.svg" alt="icon-twitter">
+            <p id="twitter">twitter</p>
+           </div>
+           <div>
+            <img src="./assets/imgs/icon-company.svg" alt="company">
+            <p id="company">Snowflake</p>
+           </div>
+            
+        </div>
+       </section>
+    </main>
+
+
+
+    <script src ="./assets/js/script.js"></script>
+</body>
+</html>
