@@ -115,7 +115,7 @@ main section .card .card-body img {
   height: 70px;
   border-radius: 50%;
 }
-main section .card .card-body #name a {
+main section .card .card-body #name {
   color: var(--text-color);
   text-decoration: none;
   font-size: 1.2rem;
