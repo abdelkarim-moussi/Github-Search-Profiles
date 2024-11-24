@@ -51,6 +51,8 @@ searchButton.addEventListener("click", (e) => {
           year: "numeric",
         });
         document.getElementById("date").innerHTML = "Joined " + formatedDate;
+
+        document.getElementById("not-exist").innerHTML = "";
       } else {
         console.log("not found");
       }
