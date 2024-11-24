@@ -5,10 +5,18 @@
 }
 
 :root {
-  --dark-mode-body: #141D2F;
-  --dark-mode-primary-color: #1E2A47;
+  --dark-mode-body: #141d2f;
+  --shdow-color: #141d2f;
+  --dark-mode-primary-color: #1e2a47;
   --text-color: #fff;
-  --color-blue: #0669DA;
+  --color-blue: #0669da;
+}
+
+.light-mode {
+  --dark-mode-body: #fff;
+  --dark-mode-primary-color: #f7f7f7;
+  --text-color: #000;
+  --shdow-color: #bdbdbd;
 }
 
 body {
@@ -51,7 +59,7 @@ main header div button {
   border-radius: 3px;
 }
 main header div button:hover {
-  background-color: #0669DA;
+  background-color: #0669da;
 }
 main header div button img {
   width: 100%;
@@ -66,12 +74,13 @@ main form {
   margin: 20px auto;
   padding: 10px 20px;
   border-radius: 10px;
+  filter: drop-shadow(0px 1px 5px var(--shdow-color));
 }
 main form div {
+  flex: 1;
   display: flex;
   align-items: center;
   gap: 15px;
-  width: 80%;
 }
 main form div img {
   width: 20px;
@@ -85,6 +94,11 @@ main form div input {
   border: none;
   background: transparent;
   color: var(--text-color);
+}
+main form #not-exist {
+  color: red;
+  margin: auto 10px;
+  font-size: 0.8rem;
 }
 main form button {
   padding: 5px 20px;
@@ -103,7 +117,7 @@ main section {
   color: var(--text-color);
   border-radius: 10px;
   padding: 30px;
-  filter: drop-shadow(0px 8px 10px var(--dark-mode-body));
+  filter: drop-shadow(0px 1px 5px var(--shdow-color));
 }
 main section .card .card-body {
   display: flex;
